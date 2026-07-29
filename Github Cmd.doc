@@ -1,0 +1,110 @@
+# ✅ Git & GitHub Commands Cheat Sheet
+
+## 🔧 Basic Setup
+
+| Command                                  | What It Does           | Example                                         |
+| ---------------------------------------- | ---------------------- | ----------------------------------------------- |
+| `git config --global user.name "Name"`   | Sets your Git username | git config --global user.name "XYZ"        |
+| `git config --global user.email "email"` | Sets your Git email    | git config --global user.email "<qa@email.com>" |
+
+***
+
+## 📥 Repository Setup
+
+| Command                | What It Does                     | Example                                     |
+| ---------------------- | -------------------------------- | ------------------------------------------- |
+| `git clone <repo-url>` | Downloads repository from GitHub | git clone <https://github.com/user/app.git> |
+| `cd folder-name`       | Moves into project directory     | cd app                                      |
+
+***
+
+## 🔍 Checking Status & Changes
+
+| Command      | What It Does                           | Example    |
+| ------------ | -------------------------------------- | ---------- |
+| `git status` | Shows changed, staged, untracked files | git status |
+| `git diff`   | Shows line-by-line changes             | git diff   |
+| `git log`    | Shows commit history                   | git log    |
+
+***
+
+## ➕ Adding Files
+
+| Command             | What It Does                  | Example         |
+| ------------------- | ----------------------------- | --------------- |
+| `git add file-name` | Adds specific file to staging | git add test.js |
+| `git add .`         | Adds all files to staging     | git add .       |
+
+***
+
+## 💾 Commit Changes
+
+| Command                   | What It Does          | Example                          |
+| ------------------------- | --------------------- | -------------------------------- |
+| `git commit -m "message"` | Saves changes locally | git commit -m "Added login test" |
+
+***
+
+## 🚀 Push & Pull
+
+| Command                | What It Does                 | Example              |
+| ---------------------- | ---------------------------- | -------------------- |
+| `git push`             | Uploads code to GitHub       | git push             |
+| `git push origin main` | Push to main branch          | git push origin main |
+| `git pull`             | Gets latest code from GitHub | git pull             |
+| `git pull origin main` | Pull from main branch        | git pull origin main |
+
+***
+
+## 🌿 Branch Management
+
+| Command                       | What It Does           | Example                    |
+| ----------------------------- | ---------------------- | -------------------------- |
+| `git branch`                  | Lists all branches     | git branch                 |
+| `git checkout -b branch-name` | Create + switch branch | git checkout -b login-test |
+| `git checkout branch-name`    | Switch branch          | git checkout main          |
+| `git branch -d branch-name`   | Deletes branch         | git branch -d login-test   |
+
+***
+
+## 🔀 Merge & Conflict Handling
+
+| Command                   | What It Does                     | Example                           |
+| ------------------------- | -------------------------------- | --------------------------------- |
+| `git merge branch-name`   | Merge branch into current branch | git merge login-test              |
+| `git status`              | Check conflicts                  | git status                        |
+| `git add .`               | Mark conflict resolved           | git add .                         |
+| `git commit -m "message"` | Complete merge                   | git commit -m "Resolved conflict" |
+
+***
+
+## 🧹 Remove / Clean Files
+
+| Command            | What It Does                    | Example        |
+| ------------------ | ------------------------------- | -------------- |
+| `git rm file-name` | Deletes tracked file            | git rm test.js |
+| `git clean -n`     | Preview untracked file deletion | git clean -n   |
+| `git clean -f`     | Delete untracked files          | git clean -f   |
+
+***
+
+## 🔄 Undo / Reset
+
+| Command                   | What It Does                 | Example                  |
+| ------------------------- | ---------------------------- | ------------------------ |
+| `git reset --soft HEAD~1` | Undo last commit (keep code) | git reset --soft HEAD\~1 |
+| `git checkout -- file`    | Discard file changes         | git checkout -- test.js  |
+
+***
+
+## ✅ QA Daily Workflow (Quick Steps)
+
+| Step            | Command                         |
+| --------------- | ------------------------------- |
+| Get latest code | git pull origin main            |
+| Create branch   | git checkout -b TC-101          |
+| Check changes   | git status                      |
+| Add files       | git add .                       |
+| Commit changes  | git commit -m "Test case added" |
+| Push branch     | git push origin TC-101          |
+
